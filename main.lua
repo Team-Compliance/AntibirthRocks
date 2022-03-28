@@ -4,7 +4,9 @@ function mod:SwapRocks()
     -- rock check
     local room = Game():GetRoom()
     local level = Game():GetLevel()
-    if level:GetAbsoluteStage() == LevelStage.STAGE3_2 and level:GetStageType() < StageType.STAGETYPE_REPENTANCE then return end
+    if (level:GetAbsoluteStage() == LevelStage.STAGE3_2 or level:GetAbsoluteStage() == LevelStage.STAGE3_1) and level:GetStageType() < StageType.STAGETYPE_REPENTANCE
+    or room:GetType() == RoomType.ROOM_CURSE or room:GetType() == RoomType.ROOM_SACRIFICE or room:GetType() == RoomType.ROOM_BLACK_MARKET
+    or room:GetType() == RoomType.ROOM_CHALLENGE or room:GetType() == RoomType.ROOM_BOSSRUSH  then return end
     for i = 0, (room:GetGridSize()) do
         local gent = room:GetGridEntity(i) 
         if gent and gent:GetType() == GridEntityType.GRID_ROCK_ALT then
