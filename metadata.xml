@@ -1,7 +1,12 @@
+<?xml version="1.1" encoding="UTF-8"?>
 <metadata>
-	<name>Antibirth Rocks</name>
-	<directory>antibirthrocks</directory>
-	<description/>
-	<version>1.0</version>
-	<visibility/>
+    <name>Antibirth Rocks</name>
+    <directory>antibirthrocks</directory>
+    <id>2783164950</id>
+    <description></description>
+    <version>1.1</version>
+    <visibility>Friends Only</visibility>
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+    <tag id="Graphics"/>
 </metadata>
